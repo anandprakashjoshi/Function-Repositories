@@ -1,0 +1,33 @@
+#A function has been defined that takes an argument as input and returns
+#all the vowels in a given string
+#Here input strings are the elements of a numpy array
+
+
+str = np.array([['Hi','Every','One'],['My','Name','Is'],['Anand','Prakash','Joshi']])
+strlen = np.zeros((3,3),dtype=int)
+for i in range(0,len(str)):
+    for j in range(0,len(str)):
+        strlen[i,j]=len(str[i,j])
+#print(strlen)
+
+list = str.flatten()
+vowels = np.array([])
+#print(list)
+#l = np.array([len(element) for element in list])
+#print(l)
+#l.reshape(3,3)
+#vowels = np.zeros((3,3),dtype=char)
+# Hello World program in Python
+
+def check_vowel(instring):
+    returnstr = ''
+    for i in range(0,len(instring)):
+        if instring[i].lower() in 'aeiou':
+            returnstr = returnstr + instring[i]
+    return returnstr
+
+for i in list:
+    vowels = np.append(vowels,check_vowel(i))
+print(vowels)
+vowels.reshape(3,3)
+ 
