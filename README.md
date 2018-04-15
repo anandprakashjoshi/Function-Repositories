@@ -1,4 +1,4 @@
-# Pythoncodes
+# Python Basic Codes
 #Basic codes required while programming in day to day life
 #includes a glimpse of numpy and pandas package which are very basic packages
 #used for data handling and manipulation in data science
