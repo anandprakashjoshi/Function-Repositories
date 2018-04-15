@@ -1,0 +1,8 @@
+#Here we would explore the use of a construct called Lambda which helps to
+#create anonymous function during run time
+#lambda is often used in conjunction with map(), filter() and reduce()
+
+celsius = [31.51,36.23,32.45,41.89]
+f = lambda T : float(9/5)*T+32
+fahrenheit = map(f,celsius)
+print(list(fahrenheit))
