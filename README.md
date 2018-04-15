@@ -1,6 +1,6 @@
 # Python Basic Codes
 #Basic codes required while programming in day to day life
-#includes a glimpse of numpy and pandas package which are very basic packages
+#includes a glimpse of numpy and pandas package which are generally
 #used for data handling and manipulation in data science
 
 1. Retriving vowels in a string given (check_vowels)
