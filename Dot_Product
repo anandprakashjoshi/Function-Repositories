@@ -1,0 +1,19 @@
+#To calculate dot product between two vectors
+#A vector v is defined to have a magnitude represented by |v| and its direction 
+#dot product of two vectors a and b is defined as |a||b|cos θ where θ is the angle between them
+#we will use python inbuild math package for various mathematical calculations
+
+v1 = np.array([1,-3,6])
+v2 = np.array([3,5,0])
+print(v1,v2)
+dot_prod  = np.dot(v1,v2.T)
+print(dot_prod)
+v1_s = np.square(v1)
+print(v1_s)
+v2_s = np.square(v2)
+print(v2_s)
+mod_1 = math.sqrt(np.sum(v1_s))
+mod_2 = math.sqrt(np.sum(v2_s))
+print(dot_prod/np.multiply(mod_1,mod_2))
+angle = math.acos(dot_prod/np.multiply(mod_1,mod_2))
+print(angle)
