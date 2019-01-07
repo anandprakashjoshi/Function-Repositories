@@ -1,0 +1,21 @@
+In data frame columns we often face the values are not consistent in terms
+of spelling, spaces and special characters. Example:
+
+data frame name : df
+
+Col_A
+=====
+Low Risk
+High Risk
+lowrisk
+Hi r$k
+LR
+
+We can use the following function to make the column consistent
+
+def update_vals(df_name,col_name,search_name,update_name):
+    for i in range(0,len(df_name)):
+       if df_name.get_value(i,col_name) == search_name:
+          df_name.set_value(i,col_name,update_name)
+ 
+update_vals(df,'Col_A','LR','Low Risk')
