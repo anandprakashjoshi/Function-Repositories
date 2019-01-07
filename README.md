@@ -7,3 +7,4 @@
 2. Check for prime number (check_prime)
 3. dot product of two vectors and finding the angle between them (Dot_Product)
 4. Converting celsius to farhenheit and vice versa (Temp_Conversion)
+5. Making values consitent in a dataframe
