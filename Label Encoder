@@ -1,0 +1,17 @@
+from sklear.preprocessing import LabelEncoder
+
+labels = LabelEncoder()
+
+df['col'] = labels.fit_transform(X['col'])
+
+#The following function defines a list and updates it
+#with a key value pair array to decode the label classes
+
+def label_mappings(le):
+    res = {}
+    for i in le.classes_:
+        res.update({i:le.transform([i])[0]})
+    return res
+    
+
+label_mappings(labels)
