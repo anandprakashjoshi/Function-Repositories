@@ -7,5 +7,5 @@
 2. Check for prime number (check_prime)
 3. dot product of two vectors and finding the angle between them (Dot_Product)
 4. Converting celsius to farhenheit and vice versa (Temp_Conversion)
-5. Making values consitent in a dataframe
-6. Encoding catagorical variables in a dataframe 
+5. Making values consitent in a dataframe(pandas)
+6. Encoding catagorical variables in a dataframe(pandas) 
